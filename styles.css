@@ -6,10 +6,12 @@
   font-family: "century gothic";
 }
 
+/*--------Mixing btn-style-------*/
 main {
   padding: 0 120px;
   background-image: url("./image/design-banner.png");
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 main .header {
   display: flex;
@@ -30,6 +32,14 @@ main .header .nav-bar .menu {
 main .header .nav-bar .menu li {
   padding: 15px 20px;
 }
+main .header .nav-bar .menu li a {
+  text-decoration: none;
+  color: black;
+}
+main .header .nav-bar .menu li a:hover {
+  color: #632e02;
+  transition: 400ms;
+}
 main .header .nav-bar .menu li:first-child {
   color: #ffa600;
   font-weight: 700;
@@ -37,6 +47,7 @@ main .header .nav-bar .menu li:first-child {
 }
 main .first-section {
   display: flex;
+  padding-bottom: 30px;
 }
 main .first-section .title-box {
   width: 50%;
@@ -62,6 +73,7 @@ main .first-section .title-box .buttons button {
   border-radius: 15px;
   border: none;
   color: #fff;
+  cursor: pointer;
 }
 main .first-section .title-box .buttons .btn-orange {
   background-color: #ffa600;
@@ -77,6 +89,49 @@ main .first-section .picture-img {
   flex-direction: column;
 }
 main .first-section .picture-img img {
-  width: 650px;
+  width: 620px;
   filter: drop-shadow(-2px 0 5px #c2b6b6);
+  margin-bottom: 20px;
+}
+main .second-section {
+  display: flex;
+  padding-bottom: 30px;
+}
+main .second-section .cheff-pic {
+  width: 50%;
+  margin: auto 0;
+}
+main .second-section .cheff-pic img {
+  width: 80%;
+}
+main .second-section .about-section {
+  width: 50%;
+  padding: 0 50px 0 50px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .second-section .about-section h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+main .second-section .about-section .paragraph {
+  line-height: 27px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+main .second-section .about-section .info-list-about {
+  margin: 30px 0;
+}
+main .second-section .about-section .info-list-about li {
+  margin: 15px 0;
+}
+main .second-section .about-section button {
+  padding: 17px 60px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffa600;
 }/*# sourceMappingURL=styles.css.map */
