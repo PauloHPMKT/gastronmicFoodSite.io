@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ main {
   padding: 0 120px;
   background-image: url("./image/design-banner.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 main .header {
   display: flex;
@@ -65,6 +66,9 @@ main .first-section .title-box .info {
 main .first-section .title-box .info li {
   margin: 15px 0;
 }
+main .first-section .title-box .info li::before {
+  content: " ✓ ";
+}
 main .first-section .title-box .buttons {
   margin: 25px 0 25px 45px;
 }
@@ -89,13 +93,13 @@ main .first-section .picture-img {
   flex-direction: column;
 }
 main .first-section .picture-img img {
-  width: 620px;
+  width: 100%;
   filter: drop-shadow(-2px 0 5px #c2b6b6);
   margin-bottom: 20px;
 }
 main .second-section {
   display: flex;
-  padding-bottom: 30px;
+  padding: 60px 0;
 }
 main .second-section .cheff-pic {
   width: 50%;
@@ -127,6 +131,9 @@ main .second-section .about-section .info-list-about {
 main .second-section .about-section .info-list-about li {
   margin: 15px 0;
 }
+main .second-section .about-section .info-list-about li::before {
+  content: " ✓ ";
+}
 main .second-section .about-section button {
   padding: 17px 60px;
   border-radius: 15px;
@@ -134,4 +141,72 @@ main .second-section .about-section button {
   color: #fff;
   cursor: pointer;
   background-color: #ffa600;
+}
+main .third-section {
+  margin: 40px 0;
+}
+main .third-section h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .third-section .category {
+  display: flex;
+  height: 650px;
+}
+main .third-section .category .list {
+  display: flex;
+  width: 100%;
+}
+main .third-section .category .list li {
+  width: 25%;
+  margin: 15px;
+}
+main .third-section .category .list li img {
+  width: 100%;
+  height: 350px;
+  border-radius: 40px;
+}
+main .fourth-section {
+  height: 100vh;
+}
+main .fourth-section h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main .fourth-section .list-menu {
+  display: flex;
+  width: 100%;
+}
+main .fourth-section .list-menu li {
+  width: 25%;
+  height: 500px;
+  margin: 15px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -3px 2px 5px #b9b8b8;
+  border-radius: 150px;
+}
+main .fourth-section .list-menu li img {
+  width: 270px;
+  margin: 6px 0 30px 0;
+}
+main .fourth-section .list-menu li .price {
+  text-align: center;
+}
+main .fourth-section .list-menu li .price h4 {
+  margin-bottom: 15px;
+}
+main .fourth-section .list-menu li .price p {
+  margin-bottom: 15px;
+}
+main .fourth-section .list-menu li .price .quantity {
+  display: block;
+  margin-bottom: 10px;
+}
+main .fourth-section .list-menu li .price .total-price {
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

@@ -25,7 +25,7 @@ main {
     padding: 0 120px;
     background-image: url("./image/design-banner.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     .header {
         display: flex;
         justify-content: space-between;
@@ -77,6 +77,9 @@ main {
                 li {
                     margin: 15px 0;
                 }
+                li::before {
+                    content: " ✓ ";
+                }
             }
             .buttons {
                 margin: 25px 0 25px 45px;
@@ -98,7 +101,7 @@ main {
             align-items: center;
             flex-direction: column;
             img {
-                width: 620px;
+                width: 100%;
                 filter: drop-shadow(-2px 0 5px rgb(194, 182, 182));
                 margin-bottom: 20px;
             }
@@ -106,7 +109,7 @@ main {
     }
     .second-section {
         display: flex;
-        padding-bottom: 30px;
+        padding: 60px 0;
         .cheff-pic {
             width: 50%;
             margin: auto 0;
@@ -135,10 +138,81 @@ main {
                 li {
                     margin: 15px 0;
                 }
+                li::before {
+                    content: " ✓ ";
+                }
             }
             button {
                 @include style-btn();
                 @include style-orange-color-btn()
+            }
+        }
+    }
+    .third-section {
+        margin: 40px 0;
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .category {
+            display: flex;
+            height: 650px;
+            .list {
+                display: flex;
+                width: 100%;
+                li {
+                    width: 25%;
+                    margin: 15px;
+                    img {
+                        width: 100%;
+                        height: 350px;
+                        border-radius: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .fourth-section {
+        height: 100vh;
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .list-menu {
+            display: flex;
+            width: 100%;
+            li {
+                width: 25%;
+                height: 500px;
+                margin: 15px;
+                display: flex;
+                justify-content: flex-start;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: -3px 2px 5px rgb(185, 184, 184);
+                border-radius: 150px;
+                img {
+                    width: 270px;
+                    margin: 6px 0 30px 0;
+                }
+                .price {
+                    text-align: center;
+                    h4 {
+                        margin-bottom: 15px;
+                    }
+                    p {
+                        margin-bottom: 15px;
+                    }
+                    .quantity {
+                        display: block;
+                        margin-bottom: 10px;
+                    }
+                    .total-price {
+                        font-weight: bold;
+                    }
+                }
             }
         }
     }
