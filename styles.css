@@ -65,6 +65,7 @@ main .first-section .title-box .info {
 }
 main .first-section .title-box .info li {
   margin: 15px 0;
+  font-size: 20px;
 }
 main .first-section .title-box .info li::before {
   content: " ✓ ";
@@ -121,15 +122,17 @@ main .second-section .about-section h2 {
   margin-bottom: 30px;
 }
 main .second-section .about-section .paragraph {
+  font-size: 20px;
   line-height: 27px;
   margin-bottom: 30px;
   text-align: justify;
 }
 main .second-section .about-section .info-list-about {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 main .second-section .about-section .info-list-about li {
   margin: 15px 0;
+  font-size: 20px;
 }
 main .second-section .about-section .info-list-about li::before {
   content: " ✓ ";
@@ -189,6 +192,7 @@ main .fourth-section .list-menu li {
   align-items: center;
   box-shadow: -3px 2px 5px #b9b8b8;
   border-radius: 150px;
+  position: relative;
 }
 main .fourth-section .list-menu li img {
   width: 270px;
@@ -196,6 +200,7 @@ main .fourth-section .list-menu li img {
 }
 main .fourth-section .list-menu li .price {
   text-align: center;
+  position: relative;
 }
 main .fourth-section .list-menu li .price h4 {
   margin-bottom: 15px;
@@ -209,4 +214,163 @@ main .fourth-section .list-menu li .price .quantity {
 }
 main .fourth-section .list-menu li .price .total-price {
   font-weight: bold;
+}
+main .fourth-section .list-menu li .add {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  cursor: pointer;
+}
+main .fourth-section .list-menu li .add::before {
+  content: " +";
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+main .fifth-section {
+  background-color: #ffa6006b;
+  margin: 40px 0;
+  height: 450px;
+  background-image: url("./image/restaurante.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(70%);
+  position: relative;
+}
+main .fifth-section .signUp-input {
+  background-color: rgba(255, 255, 255, 0.788);
+  padding: 40px;
+  border-radius: 10px;
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+  display: inline-block;
+  width: 500px;
+}
+main .fifth-section .signUp-input h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #fff;
+  color: #472b00;
+}
+main .fifth-section .signUp-input input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 10px;
+}
+main .fifth-section .signUp-input button {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  position: absolute;
+  top: 162px;
+  left: 356px;
+  background-color: #ffa600;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+main .sixth-section {
+  padding: 50px 0;
+}
+main .sixth-section h2 {
+  font-size: 40px;
+  text-align: center;
+  display: block;
+  margin-bottom: 50px;
+}
+main .sixth-section .coffee-section {
+  display: flex;
+  padding: 30px 0;
+}
+main .sixth-section .coffee-section .picture-coffee {
+  width: 50%;
+}
+main .sixth-section .coffee-section .picture-coffee img {
+  width: 60%;
+  height: 100%;
+}
+main .sixth-section .coffee-section .pic-position {
+  display: flex;
+  justify-content: flex-end;
+}
+main .sixth-section .coffee-section .coffee-description {
+  width: 50%;
+  border: 2px solid black;
+  margin: 80px 0;
+  padding: 20px 30px;
+  position: relative;
+}
+main .sixth-section .coffee-section .coffee-description h3 {
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+main .sixth-section .coffee-section .coffee-description p {
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+main .sixth-section .coffee-section .coffee-description button {
+  height: 30px;
+  width: 100px;
+  border-radius: 7px;
+  position: absolute;
+  right: 30px;
+  bottom: 14px;
+  background-color: #ffa600;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+main .footer {
+  -webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+  background-image: url("./image/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  font-weight: bold;
+}
+main .footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .footer .footer-contact ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+main .footer .footer-contact ul img {
+  width: 30px;
+}
+main .footer .sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+main .footer .sections .space-between-sections {
+  padding: 0 30px;
+}
+main .footer .sections .space-between-sections h4 {
+  margin-bottom: 30px;
+}
+main .footer .sections .space-between-sections .last-menu {
+  font-weight: 100;
+}
+main .footer .sections .space-between-sections .last-menu li {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
