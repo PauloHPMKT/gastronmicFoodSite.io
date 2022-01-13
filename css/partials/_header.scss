@@ -1,0 +1,40 @@
+.header {
+    @include alignFlex(flex, space-between, center);
+    padding: 5px 150px;
+    
+    .logo {
+        display: flex;
+
+        img {
+            width: 80px;
+        }
+    }
+    
+    .nav-bar {
+        @include alignFlex(flex, center, center);
+        //margin-right: 300px;
+
+        .menu {
+            @include alignFlex(flex, center, center);
+
+            li {
+                padding: 15px 20px;
+                font-weight: bold;
+
+                &:first-child {
+                    border-radius: 10px;
+                    border-bottom: 3px solid $main-orange-color;
+                }
+                &:hover {
+                    color: #632e02;
+                    transition: 400ms;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: black;                    
+                }
+            }
+        }
+    }
+}
