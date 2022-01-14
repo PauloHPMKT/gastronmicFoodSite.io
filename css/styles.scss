@@ -4,74 +4,15 @@
 
 //mixin import 
 @import 'partials/mixins/mixin-alignFlex';
+@import 'partials/mixins/mixin-btnStyles';
 
 //web page components
 @import 'partials/header';
+@import 'partials/home';
 
-/*--------Mixing btn-style-------*/
-
-@mixin style-btn {
-  padding: 17px 60px;
-  border-radius: 15px;
-  border: none;
-  color: $white-color;
-  cursor: pointer;
-}
-
-@mixin style-orange-color-btn {
-  background-color: #ffa600;
-}
 
   
   
-  .first-section {
-    display: flex;
-    padding-bottom: 30px;
-    .title-box {
-      width: 50%;
-      margin-top: 110px;
-      h1 {
-        font-size: 70px;
-        .color {
-          color: #ffa600;
-        }
-      }
-      .info {
-        margin: 50px 0 50px 170px;
-        li {
-          margin: 15px 0;
-          font-size: 20px;
-        }
-        li::before {
-          content: " ✓ ";
-        }
-      }
-      .buttons {
-        margin: 25px 0 25px 45px;
-        button {
-          @include style-btn();
-        }
-        .btn-orange {
-          @include style-orange-color-btn();
-        }
-        .btn-brown {
-          background-color: #632e02;
-        }
-      }
-    }
-    .picture-img {
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      img {
-        width: 100%;
-        filter: drop-shadow(-2px 0 5px rgb(194, 182, 182));
-        margin-bottom: 20px;
-      }
-    }
-  }
   .second-section {
     display: flex;
     padding: 60px 0;
@@ -110,8 +51,7 @@
         }
       }
       button {
-        @include style-btn();
-        @include style-orange-color-btn();
+        border: 1px solid gray;
       }
     }
   }

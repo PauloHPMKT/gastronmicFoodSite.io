@@ -25,14 +25,15 @@
                     border-radius: 10px;
                     border-bottom: 3px solid $main-orange-color;
                 }
-                &:hover {
-                    color: #632e02;
-                    transition: 400ms;
-                }
-
+            
                 a {
                     text-decoration: none;
-                    color: black;                    
+                    color: black;   
+                    
+                    &:hover {
+                        color: $brown-hue;
+                        transition: 400ms;
+                    }
                 }
             }
         }
