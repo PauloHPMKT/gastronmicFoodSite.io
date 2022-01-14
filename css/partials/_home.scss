@@ -1,0 +1,54 @@
+.first-section {
+    display: flex;
+    padding-bottom: 50px;
+
+    .title-box {
+        width: 50%;
+        @include alignFlex(flex, center, flex-start);
+        flex-direction: column;
+
+        h1 {
+            font-size: 80px;
+            color: #000000;
+            .color {
+                color: $main-orange-color;
+            }
+        }
+
+        .info {
+            margin: 50px 0px 50px 50px;
+
+            li {
+                margin: 15px 0;
+                font-size: 23px;
+                
+                &::before {
+                    content: " ✓ ";
+                }
+            }
+        }
+        .buttons {
+            margin: 25px 0 25px 45px;
+
+            button {
+                @include style-btn;
+                color: $white-color;
+                background-color: $main-orange-color;
+
+                &:last-child {
+                    background-color: $brown-hue;
+                }
+            }
+        }
+    }
+
+    .picture-img {
+        width: 50%;
+        @include alignFlex(flex, center, center);
+
+        img {
+            width: 100%;
+            filter: drop-shadow(-2px 0 5px rgb(226, 210, 210));
+        }
+    }
+}
