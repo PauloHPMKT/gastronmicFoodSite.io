@@ -1,38 +1,51 @@
 .header {
-    @include alignFlex(flex, space-between, center);
-    padding: 5px 150px;
+    @include container;
+    @include align-flex(flex, space-between, center);
     
-    .logo {
+    &-brand {
         display: flex;
 
-        img {
-            width: 80px;
+        span {
+            display: flex;
+            font-weight: bold;
+            font-size: 50px;
+            text-shadow: -2px 2px 3px #bdbdbd;
+            cursor: pointer;
+
+            div {
+                color: $main-orange-color;
+            }
         }
     }
-    
-    .nav-bar {
-        @include alignFlex(flex, center, center);
-        //margin-right: 300px;
 
-        .menu {
-            @include alignFlex(flex, center, center);
+    &-nav-bar {
+
+        ul {
+            @include align-flex(flex, center, center);
 
             li {
                 padding: 15px 20px;
-                font-weight: bold;
+                font-size: 17px;
+                font-weight: 700;
+                text-transform: uppercase;
 
-                &:first-child {
+                .active {
+                    background-color: $main-orange-color;
+                    padding: 10px;
                     border-radius: 10px;
-                    border-bottom: 3px solid $main-orange-color;
+
+                    &:hover {
+                        color: white;
+                    }
                 }
-            
+
                 a {
-                    text-decoration: none;
-                    color: black;   
-                    
+                    color: black;
+
                     &:hover {
                         color: $brown-hue;
                         transition: 400ms;
+                    
                     }
                 }
             }

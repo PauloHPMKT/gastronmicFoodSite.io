@@ -2,15 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     font-family: "century gothic", Arial, Helvetica, sans-serif;
 }
 
-.container {
-    padding: 0 120px;
-    background-image: url("/image/design-banner.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+body {
+
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
 }
+
+
 
   
