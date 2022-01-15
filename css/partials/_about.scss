@@ -1,0 +1,45 @@
+.about{
+    display: flex;
+    padding: 120px 0;
+
+    &-cheff-pic {
+        width: $display-width;
+        @include bg-image('photo-cheff.png', 100%, center)
+    }
+
+    .about-text-description {
+        width: $display-width;
+        @include align-flex(flex, flex-start, flex-start);
+        flex-direction: column;
+        padding: 0 50px;
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .about-text-paragraph {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            text-align: justify;
+
+        }
+
+        .info-list-about {
+            margin: 20px 0;
+
+            li {
+              margin: 15px 0;
+              font-size: 20px;
+            }
+
+            li::before {
+              content: " ✓ ";
+            }
+        }
+    }
+    button {
+        @include style-btn;
+    }
+}

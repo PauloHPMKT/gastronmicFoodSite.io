@@ -1,0 +1,31 @@
+//container dimention
+@mixin container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+}
+
+//centralize container
+@mixin align-flex($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//button style
+@mixin style-btn {
+    padding: 17px 60px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+//image config
+@mixin bg-image($img, $size, $position) {
+    background-image: url('../image/#{$img}');
+    background-repeat: no-repeat;
+    background-size: $size;
+    background-position: $position;
+}
