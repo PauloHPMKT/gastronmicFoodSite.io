@@ -3,58 +3,17 @@
 @import 'partials/variables';
 
 //mixin import 
-@import 'partials/mixins/mixin-alignFlex';
-@import 'partials/mixins/mixin-btnStyles';
+@import 'partials/mixins/mixins';
 
 //web page components
 @import 'partials/header';
 @import 'partials/home';
+@import 'partials/about';
 
 
   
   
-  .second-section {
-    display: flex;
-    padding: 60px 0;
-    .cheff-pic {
-      width: 50%;
-      margin: auto 0;
-      img {
-        width: 80%;
-      }
-    }
-    .about-section {
-      width: 50%;
-      padding: 0 50px 0 50px;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: column;
-      align-items: flex-start;
-      h2 {
-        font-size: 40px;
-        margin-bottom: 30px;
-      }
-      .paragraph {
-        font-size: 20px;
-        line-height: 27px;
-        margin-bottom: 30px;
-        text-align: justify;
-      }
-      .info-list-about {
-        margin: 20px 0;
-        li {
-          margin: 15px 0;
-          font-size: 20px;
-        }
-        li::before {
-          content: " ✓ ";
-        }
-      }
-      button {
-        border: 1px solid gray;
-      }
-    }
-  }
+
   .third-section {
     margin: 40px 0;
     h2 {

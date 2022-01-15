@@ -3,88 +3,105 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
   font-family: "century gothic", Arial, Helvetica, sans-serif;
 }
 
-.container {
-  padding: 0 120px;
-  background-image: url("/image/design-banner.png");
-  background-repeat: no-repeat;
-  background-size: contain;
+body ul {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
 }
 
 .header {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 150px;
 }
-.header .logo {
+.header-brand {
   display: flex;
 }
-.header .logo img {
-  width: 80px;
-}
-.header .nav-bar {
+.header-brand span {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .nav-bar .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .nav-bar .menu li {
-  padding: 15px 20px;
   font-weight: bold;
+  font-size: 50px;
+  text-shadow: -2px 2px 3px #bdbdbd;
+  cursor: pointer;
 }
-.header .nav-bar .menu li:first-child {
+.header-brand span div {
+  color: #ffa600;
+}
+.header-nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-nav-bar ul li {
+  padding: 15px 20px;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header-nav-bar ul li .active {
+  background-color: #ffa600;
+  padding: 10px;
   border-radius: 10px;
-  border-bottom: 3px solid #ffa600;
 }
-.header .nav-bar .menu li a {
-  text-decoration: none;
+.header-nav-bar ul li .active:hover {
+  color: white;
+}
+.header-nav-bar ul li a {
   color: black;
 }
-.header .nav-bar .menu li a:hover {
+.header-nav-bar ul li a:hover {
   color: #632e02;
   transition: 400ms;
 }
 
-.first-section {
-  display: flex;
-  padding-bottom: 50px;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
 }
-.first-section .title-box {
+.container-introduction {
+  display: flex;
+  background-image: url("../image/design-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-bottom: 100px;
+}
+.container-introduction-title-box {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-.first-section .title-box h1 {
+.container-introduction-title-box h1 {
   font-size: 80px;
   color: #000000;
 }
-.first-section .title-box h1 .color {
+.container-introduction-title-box h1 .color {
   color: #ffa600;
 }
-.first-section .title-box .info {
+.container-introduction-title-box .info {
   margin: 50px 0px 50px 50px;
 }
-.first-section .title-box .info li {
+.container-introduction-title-box .info li {
   margin: 15px 0;
   font-size: 23px;
 }
-.first-section .title-box .info li::before {
+.container-introduction-title-box .info li::before {
   content: " ✓ ";
 }
-.first-section .title-box .buttons {
+.container-introduction-title-box .buttons {
   margin: 25px 0 25px 45px;
 }
-.first-section .title-box .buttons button {
+.container-introduction-title-box .buttons button {
   padding: 17px 60px;
   border-radius: 15px;
   border: none;
@@ -94,61 +111,66 @@
   color: #ffffff;
   background-color: #ffa600;
 }
-.first-section .title-box .buttons button:last-child {
+.container-introduction-title-box .buttons button:last-child {
   background-color: #632e02;
 }
-.first-section .picture-img {
+.container-introduction-picture-img {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.first-section .picture-img img {
-  width: 100%;
-  filter: drop-shadow(-2px 0 5px #e2d2d2);
+  background-image: url("../image/salada-de-frutas.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
-.second-section {
+.about {
   display: flex;
-  padding: 60px 0;
+  padding: 120px 0;
 }
-.second-section .cheff-pic {
+.about-cheff-pic {
   width: 50%;
-  margin: auto 0;
+  background-image: url("../image/photo-cheff.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
-.second-section .cheff-pic img {
-  width: 80%;
-}
-.second-section .about-section {
+.about .about-text-description {
   width: 50%;
-  padding: 0 50px 0 50px;
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
+  padding: 0 50px;
 }
-.second-section .about-section h2 {
+.about .about-text-description h2 {
   font-size: 40px;
   margin-bottom: 30px;
 }
-.second-section .about-section .paragraph {
+.about .about-text-description .about-text-paragraph {
   font-size: 20px;
-  line-height: 27px;
+  line-height: 30px;
   margin-bottom: 30px;
   text-align: justify;
 }
-.second-section .about-section .info-list-about {
+.about .about-text-description .info-list-about {
   margin: 20px 0;
 }
-.second-section .about-section .info-list-about li {
+.about .about-text-description .info-list-about li {
   margin: 15px 0;
   font-size: 20px;
 }
-.second-section .about-section .info-list-about li::before {
+.about .about-text-description .info-list-about li::before {
   content: " ✓ ";
 }
-.second-section .about-section button {
-  border: 1px solid gray;
+.about button {
+  padding: 17px 60px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .third-section {
