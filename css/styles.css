@@ -62,46 +62,45 @@ body a {
 }
 
 .container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 1.5rem 0;
-}
-.container-introduction {
   display: flex;
   background-image: url("../image/design-banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
   padding-bottom: 100px;
 }
-.container-introduction-title-box {
+.container-introduction {
+  padding-top: 50px;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
 }
-.container-introduction-title-box h1 {
+.container-introduction h1 {
   font-size: 80px;
   color: #000000;
 }
-.container-introduction-title-box h1 .color {
+.container-introduction h1 .color {
   color: #ffa600;
 }
-.container-introduction-title-box .info {
+.container-introduction .info {
   margin: 50px 0px 50px 50px;
 }
-.container-introduction-title-box .info li {
+.container-introduction .info li {
   margin: 15px 0;
   font-size: 23px;
 }
-.container-introduction-title-box .info li::before {
+.container-introduction .info li::before {
   content: " ✓ ";
 }
-.container-introduction-title-box .buttons {
-  margin: 25px 0 25px 45px;
+.container-introduction .buttons {
+  margin: 25px 45px;
 }
-.container-introduction-title-box .buttons button {
+.container-introduction .buttons button {
   padding: 17px 60px;
   border-radius: 15px;
   border: none;
@@ -111,10 +110,10 @@ body a {
   color: #ffffff;
   background-color: #ffa600;
 }
-.container-introduction-title-box .buttons button:last-child {
+.container-introduction .buttons button:last-child {
   background-color: #632e02;
 }
-.container-introduction-picture-img {
+.container-picture-img {
   width: 50%;
   display: flex;
   justify-content: center;
