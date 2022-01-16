@@ -1,6 +1,5 @@
 .dishers {
-    @include container;
-    padding: 60px 0;
+    @include container(120px);
 
     h2 {
         font-size: $size-font-subtitle;

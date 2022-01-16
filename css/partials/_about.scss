@@ -1,8 +1,6 @@
 .about{
-    @include container;
+    @include container(120px);
     display: flex;
-    padding: 120px 0;
-
     &-cheff-pic {
         width: $display-width;
         @include bg-image('photo-cheff.png', 100%, center)

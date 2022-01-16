@@ -1,8 +1,8 @@
 //container dimention
-@mixin container {
+@mixin container ($height-padding) {
     max-width: $container-width;
     margin: 0 auto;
-    padding: 1.5rem 0;
+    padding: $height-padding 80px;
 }
 
 //centralize container

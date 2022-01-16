@@ -1,5 +1,5 @@
 .header {
-    @include container;
+    @include container(1.5rem);
     @include align-flex(flex, space-between, center);
     
     &-brand {

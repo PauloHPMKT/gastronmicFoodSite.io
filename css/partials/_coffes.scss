@@ -1,6 +1,5 @@
 .coffees {
-    @include container;
-    padding: 120px 0;
+    @include container(120px);
 
     h2 {
         font-size: $size-font-subtitle;

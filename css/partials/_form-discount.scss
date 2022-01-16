@@ -1,7 +1,7 @@
 .form-discount {
-    margin: 40px 0;
+    //margin: 40px 0;
     height: 450px;
-    @include container;
+    @include container(80px);
     @include bg-image('restaurante.png', cover, center);
     filter: grayscale(70%);
     position: relative;
