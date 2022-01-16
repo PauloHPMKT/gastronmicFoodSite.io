@@ -125,6 +125,9 @@ body a {
 }
 
 .about {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
   display: flex;
   padding: 120px 0;
 }
@@ -135,7 +138,7 @@ body a {
   background-size: 100%;
   background-position: center;
 }
-.about .about-text-description {
+.about-text-description {
   width: 50%;
   display: flex;
   justify-content: flex-start;
@@ -143,33 +146,35 @@ body a {
   flex-direction: column;
   padding: 0 50px;
 }
-.about .about-text-description h2 {
-  font-size: 40px;
+.about-text-description h2 {
+  font-size: 50px;
   margin-bottom: 30px;
 }
-.about .about-text-description .about-text-paragraph {
+.about-text-description .about-text-paragraph {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 30px;
   text-align: justify;
 }
-.about .about-text-description .info-list-about {
+.about-text-description .info-list-about {
   margin: 20px 0;
 }
-.about .about-text-description .info-list-about li {
+.about-text-description .info-list-about li {
   margin: 15px 0;
   font-size: 20px;
 }
-.about .about-text-description .info-list-about li::before {
+.about-text-description .info-list-about li::before {
   content: " ✓ ";
 }
-.about button {
+.about-text-description button {
   padding: 17px 60px;
   border-radius: 15px;
   border: none;
   cursor: pointer;
   font-size: 20px;
   font-weight: 500;
+  color: #ffffff;
+  background-color: #ffa600;
 }
 
 .third-section {

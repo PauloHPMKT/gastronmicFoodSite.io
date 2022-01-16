@@ -1,4 +1,5 @@
 .about{
+    @include container;
     display: flex;
     padding: 120px 0;
 
@@ -7,14 +8,14 @@
         @include bg-image('photo-cheff.png', 100%, center)
     }
 
-    .about-text-description {
+    &-text-description {
         width: $display-width;
         @include align-flex(flex, flex-start, flex-start);
         flex-direction: column;
         padding: 0 50px;
 
         h2 {
-            font-size: 40px;
+            font-size: 50px;
             margin-bottom: 30px;
         }
 
@@ -30,16 +31,19 @@
             margin: 20px 0;
 
             li {
-              margin: 15px 0;
-              font-size: 20px;
-            }
+                margin: 15px 0;
+                font-size: 20px;
 
-            li::before {
-              content: " ✓ ";
+                &::before {
+                    content: " ✓ ";
+                }
             }
         }
-    }
-    button {
-        @include style-btn;
-    }
+
+        button {
+            @include style-btn;
+            color: $white-color;
+            background-color: $main-orange-color;
+        }
+    } 
 }
