@@ -211,66 +211,98 @@ body a {
   font-size: 25px;
 }
 
-.fourth-section {
-  height: 100vh;
+.dishers {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  padding: 60px 0;
 }
-.fourth-section h2 {
-  font-size: 40px;
+.dishers h2 {
+  font-size: 60px;
   text-align: center;
   margin-bottom: 30px;
 }
-.fourth-section .list-menu {
+.dishers-content {
+  margin: 20px 0;
+}
+.dishers-content .list-menu {
   display: flex;
   width: 100%;
 }
-.fourth-section .list-menu li {
+.dishers-content .list-menu li {
   width: 25%;
   height: 500px;
   margin: 15px;
+  padding: 8px;
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
   align-items: center;
-  box-shadow: -3px 2px 5px #b9b8b8;
+  flex-direction: column;
+  box-shadow: 0 15px 20px #bdbdbd;
   border-radius: 150px;
   position: relative;
 }
-.fourth-section .list-menu li img {
-  width: 270px;
-  margin: 6px 0 30px 0;
+.dishers-content .list-menu li .dishers-type {
+  width: 100%;
+  height: 60%;
 }
-.fourth-section .list-menu li .price {
+.dishers-content .list-menu li #card-1 {
+  background-image: url("../image/prato1-removebg-preview (1).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+.dishers-content .list-menu li #card-2 {
+  background-image: url("../image/prato2-removebg-preview (1).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+.dishers-content .list-menu li #card-3 {
+  background-image: url("../image/prato3-removebg-preview (1).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+.dishers-content .list-menu li #card-4 {
+  background-image: url("../image/prato4-removebg-preview (1).png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+.dishers-content .list-menu li .price {
+  margin: 20px;
   text-align: center;
+  line-height: 25px;
   position: relative;
 }
-.fourth-section .list-menu li .price h4 {
+.dishers-content .list-menu li .price h4 {
+  font-size: 20px;
   margin-bottom: 15px;
 }
-.fourth-section .list-menu li .price p {
-  margin-bottom: 15px;
-}
-.fourth-section .list-menu li .price .quantity {
+.dishers-content .list-menu li .price .quantity {
   display: block;
-  margin-bottom: 10px;
 }
-.fourth-section .list-menu li .price .total-price {
+.dishers-content .list-menu li .price .total-price {
   font-weight: bold;
 }
-.fourth-section .list-menu li .add {
-  width: 50px;
-  height: 50px;
+.dishers-content .list-menu li .add {
+  width: 70px;
+  height: 70px;
   background-color: black;
   border-radius: 50%;
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   cursor: pointer;
 }
-.fourth-section .list-menu li .add::before {
-  content: " +";
-  color: #fff;
+.dishers-content .list-menu li .add::before {
+  content: "";
+  font-family: "FontAwesome";
+  font-size: 30px;
+  color: #ffffff;
   position: absolute;
-  left: 20px;
-  top: 15px;
+  top: 20px;
+  left: 21px;
 }
 
 .fifth-section {
