@@ -305,18 +305,21 @@ body a {
   left: 21px;
 }
 
-.fifth-section {
-  background-color: #ffa6006b;
+.form-discount {
   margin: 40px 0;
   height: 450px;
-  background-image: url("./image/restaurante.png");
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-image: url("../image/restaurante.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   filter: grayscale(70%);
   position: relative;
 }
-.fifth-section .signUp-input {
-  background-color: rgba(255, 255, 255, 0.788);
+.form-discount-signUp-input {
+  background-color: #ffffffc9;
   padding: 40px;
   border-radius: 10px;
   position: absolute;
@@ -325,30 +328,33 @@ body a {
   display: inline-block;
   width: 500px;
 }
-.fifth-section .signUp-input h3 {
+.form-discount-signUp-input h3 {
   font-size: 40px;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px #fff;
-  color: #472b00;
+  color: #632e02;
 }
-.fifth-section .signUp-input input {
+.form-discount-signUp-input input {
   width: 100%;
-  height: 40px;
+  height: 45px;
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
   padding-left: 10px;
 }
-.fifth-section .signUp-input button {
-  height: 30px;
-  width: 100px;
-  border-radius: 7px;
-  position: absolute;
-  top: 162px;
-  left: 356px;
-  background-color: #ffa600;
+.form-discount-signUp-input button {
+  padding: 17px 60px;
+  border-radius: 15px;
   border: none;
-  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 7px 10px;
+  position: absolute;
+  top: 162.5px;
+  right: 43px;
+  border-radius: 7px;
+  background-color: #632e02;
+  color: #ffffff;
   cursor: pointer;
 }
 
