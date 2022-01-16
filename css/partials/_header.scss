@@ -51,4 +51,18 @@
             }
         }
     }
+
+    &-social-media {
+
+        .social-menu {
+            @include align-flex(flex, space-between, unset);
+            font-size: 30px;
+            margin: 20px 0;
+
+            li {
+                margin: 5px;
+                cursor: pointer;
+            }
+        }
+    }
 }
