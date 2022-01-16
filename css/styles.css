@@ -147,7 +147,7 @@ body a {
   padding: 0 50px;
 }
 .about-text-description h2 {
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 30px;
 }
 .about-text-description .about-text-paragraph {
@@ -177,30 +177,38 @@ body a {
   background-color: #ffa600;
 }
 
-.third-section {
-  margin: 40px 0;
+.content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  padding: 60px 0;
 }
-.third-section h2 {
-  font-size: 40px;
+.content h2 {
+  font-size: 60px;
   text-align: center;
   margin-bottom: 30px;
 }
-.third-section .category {
+.content-category {
   display: flex;
-  height: 650px;
 }
-.third-section .category .list {
+.content-category .list {
   display: flex;
   width: 100%;
 }
-.third-section .category .list li {
+.content-category .list li {
   width: 25%;
   margin: 15px;
+  text-align: center;
 }
-.third-section .category .list li img {
+.content-category .list li img {
   width: 100%;
   height: 350px;
   border-radius: 40px;
+  cursor: pointer;
+}
+.content-category .list li span {
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 .fourth-section {
