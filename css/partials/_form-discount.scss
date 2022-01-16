@@ -1,0 +1,46 @@
+.form-discount {
+    margin: 40px 0;
+    height: 450px;
+    @include container;
+    @include bg-image('restaurante.png', cover, center);
+    filter: grayscale(70%);
+    position: relative;
+
+    &-signUp-input {
+        background-color: #ffffffc9;
+        padding: 40px;
+        border-radius: 10px;
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        display: inline-block;
+        width: 500px;
+
+        h3 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: $brown-hue;
+        }
+
+        input {
+            width: 100%;
+            height: 45px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            position: relative;
+            padding-left: 10px;
+        }
+        
+        button {
+            @include style-btn;
+            padding: 7px 10px;
+            position: absolute;
+            top: 162.5px;
+            right: 43px;
+            border-radius: 7px;
+            background-color: $brown-hue;
+            color: $white-color;
+            cursor: pointer;
+        }
+    }
+}
