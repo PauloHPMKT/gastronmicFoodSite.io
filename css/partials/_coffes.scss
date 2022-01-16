@@ -1,0 +1,57 @@
+.coffees {
+    @include container;
+    padding: 120px 0;
+
+    h2 {
+        font-size: $size-font-subtitle;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    &-section {
+        display: flex;
+        padding: 30px 0;
+
+        .picture-coffee {
+            width: $display-width;
+
+            img {
+            width: 60%;
+            height: 100%;
+            }
+        }
+
+        .pic-position {
+            display: flex;
+            justify-content: flex-end;
+        }
+      
+        .coffee-description {
+            width: $display-width;
+            border: 2px solid black;
+            margin: 80px 0;
+            padding: 20px 30px;
+            position: relative;
+
+            h3 {
+                font-size: 40px;
+                font-weight: 100;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 27px;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
+            button {
+                @include style-btn;
+                background-color: $main-orange-color;
+                color: $white-color;
+                position: absolute;
+                right: 20px;
+            }
+        }
+    }
+}
