@@ -1,0 +1,90 @@
+.dishers {
+    @include container;
+    padding: 60px 0;
+
+    h2 {
+        font-size: $size-font-subtitle;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &-content {
+        margin: 20px 0;
+        .list-menu {
+            display: flex;
+            width: 100%;
+
+            li {
+                width: 25%;
+                height: 500px;
+                margin: 15px;
+                padding: 8px;
+                @include align-flex(flex, flex-start, center);
+                flex-direction: column;
+                box-shadow: 0 15px 20px #bdbdbd;
+                border-radius: 150px;
+                position: relative;
+
+                .dishers-type {
+                    width: 100%;
+                    height: 60%;
+                }
+                #card-1 {
+                    @include bg-image('prato1-removebg-preview (1).png', 100%, top);
+                }
+
+                #card-2 {
+                    @include bg-image('prato2-removebg-preview (1).png', 100%, top);
+                }
+
+                #card-3 {
+                    @include bg-image('prato3-removebg-preview (1).png', 100%, top);
+                }
+
+                #card-4 {
+                    @include bg-image('prato4-removebg-preview (1).png', 100%, top);
+                }
+
+                .price {
+                    margin: 20px;
+                    text-align: center;
+                    line-height: 25px;
+                    position: relative;
+
+                    h4 {
+                        font-size: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .quantity {
+                        display: block;
+                    }
+
+                    .total-price {
+                        font-weight: bold;
+                    }
+                }
+
+                .add {
+                    width: 70px;
+                    height: 70px;
+                    background-color: black;
+                    border-radius: 50%;
+                    position: absolute;
+                    bottom: -30px;
+                    cursor: pointer;
+
+                    &::before {
+                        content: "\f067";
+                        font-family: 'FontAwesome';
+                        font-size: 30px;
+                        color: $white-color;
+                        position: absolute;
+                        top: 20px;
+                        left: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
