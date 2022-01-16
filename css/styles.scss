@@ -12,6 +12,7 @@
 @import 'partials/food-categories';
 @import 'partials/dishes';
 @import 'partials/form-discount';
+@import 'partials/coffes';
 
 
   
@@ -20,59 +21,7 @@
   
   
   
-  .sixth-section {
-    padding: 50px 0;
-    h2 {
-      font-size: 40px;
-      text-align: center;
-      display: block;
-      margin-bottom: 50px;
-    }
-    .coffee-section {
-      display: flex;
-      padding: 30px 0;
-      .picture-coffee {
-        width: 50%;
-        img {
-          width: 60%;
-          height: 100%;
-        }
-      }
-      .pic-position {
-        display: flex;
-        justify-content: flex-end;
-      }
-      .coffee-description {
-        width: 50%;
-        border: 2px solid black;
-        margin: 80px 0;
-        padding: 20px 30px;
-        position: relative;
-        h3 {
-          font-size: 40px;
-          font-weight: 100;
-          margin-bottom: 20px;
-        }
-        p {
-          font-size: 20px;
-          text-align: justify;
-          margin-bottom: 20px;
-        }
-        button {
-          height: 30px;
-          width: 100px;
-          border-radius: 7px;
-          position: absolute;
-          right: 30px;
-          bottom: 14px;
-          background-color: #ffa600;
-          border: none;
-          color: #fff;
-          cursor: pointer;
-        }
-      }
-    }
-  }
+  
   .footer {
     -webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
