@@ -1,6 +1,10 @@
 .header {
     @include container(1.5rem);
     @include align-flex(flex, space-between, center);
+
+    @media (max-width:1024px) {
+        @include container(10px);
+    } 
     
     &-brand {
         display: flex;
@@ -14,7 +18,7 @@
 
             div {
                 color: $main-orange-color;
-            }
+            }   
         }
     }
 
@@ -28,6 +32,11 @@
                 font-size: 17px;
                 font-weight: 700;
                 text-transform: uppercase;
+
+                @media (min-width: 1024px) and (max-width: 1150px) {
+                    font-size: 13px;
+                    padding: 15px;
+                }
 
                 .active {
                     background-color: $main-orange-color;
@@ -48,6 +57,10 @@
                     
                     }
                 }
+            } 
+            
+            @media (max-width: 1024px) {
+                display: none;
             }
         }
     }
@@ -59,10 +72,34 @@
             font-size: 30px;
             margin: 20px 0;
 
+            @media (max-width: 768px) {
+                display: none;
+            }
+
             li {
                 margin: 5px;
                 cursor: pointer;
+
+
+                @media (max-width: 1024px) {
+                    margin: 20px;
+                }               
             }
+        }
+    }
+
+    &-menu-btn {
+        @include align-flex(flex, center, center);
+        font-size: 60px;
+        color: $main-orange-color;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        display: none;
+        margin: 20px 0;
+
+        @media (max-width: 1024px) {
+            display: flex;
         }
     }
 }
