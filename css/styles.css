@@ -21,6 +21,13 @@ body a {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .header {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 80px;
+  }
+}
 .header-brand {
   display: flex;
 }
@@ -45,6 +52,12 @@ body a {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media (min-width: 1024px) and (max-width: 1150px) {
+  .header-nav-bar ul li {
+    font-size: 13px;
+    padding: 15px;
+  }
+}
 .header-nav-bar ul li .active {
   background-color: #ffa600;
   padding: 10px;
@@ -60,6 +73,11 @@ body a {
   color: #632e02;
   transition: 400ms;
 }
+@media (max-width: 1024px) {
+  .header-nav-bar ul {
+    display: none;
+  }
+}
 .header-social-media .social-menu {
   display: flex;
   justify-content: space-between;
@@ -67,9 +85,36 @@ body a {
   font-size: 30px;
   margin: 20px 0;
 }
+@media (max-width: 768px) {
+  .header-social-media .social-menu {
+    display: none;
+  }
+}
 .header-social-media .social-menu li {
   margin: 5px;
   cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .header-social-media .social-menu li {
+    margin: 20px;
+  }
+}
+.header-menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  color: #ffa600;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: none;
+  margin: 20px 0;
+}
+@media (max-width: 1024px) {
+  .header-menu-btn {
+    display: flex;
+  }
 }
 
 .container {
