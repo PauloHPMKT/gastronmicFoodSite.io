@@ -5,23 +5,59 @@
     @include container(1.5rem);
     padding-bottom: 100px;
 
+    @media (max-width: 1270px) {
+        padding-bottom: 40px;
+    }
+
+    @media (max-width: 1020px) {
+        background-image: none;
+        background-color: $main-orange-color;
+    }
+
+    
+
     &-introduction {
         padding-top: 50px;
         width: $display-width;
         @include align-flex(flex, center, flex-start);
         flex-direction: column;
 
+        @media (max-width: 1020px) {
+            width: 100%;
+            @include align-flex(flex, center, center)
+        }
+
         h1 {
             font-size: 80px;
             color: #000000;
 
+            @media (min-width: 1270px) and (max-width: 1295px) {
+                font-size: 70px;
+            }
+
+            @media (min-width: 1020px) and (max-width: 1270px) {
+                font-size: 60px;
+            }
+
+            @media (max-width: 1020px) {
+                text-align: center;
+            }
+
             .color {
                 color: $main-orange-color;
+
+                @media (max-width: 1020px) {
+                    color: $white-color;
+                }
             }
         }  
         
         .info {
             margin: 50px 0px 50px 50px;
+
+            @media (max-width: 1290px) {
+                margin: 30px 0 30px 30px;
+            }
 
             li {
                 margin: 15px 0;
@@ -43,6 +79,20 @@
 
                 &:last-child {
                     background-color: $brown-hue;
+
+                    @media (max-width: 1020px) {
+                        color: $white-color;
+                    }
+                }
+
+                @media (max-width: 1270px) {
+                    padding: 15px 30px;
+                    font-size: 17px;
+                }
+
+                @media (max-width: 1020px) {
+                    background-color: $white-color;
+                    color: $brown-hue;
                 }
             }
         }
@@ -52,6 +102,10 @@
         width: $display-width;
         @include align-flex(flex, center, center);
         @include bg-image('salada-de-frutas.png', 100%, center);
+
+        @media(max-width: 1020px) {
+            display: none;
+        }
     }
 }
 
