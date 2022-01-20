@@ -6,10 +6,10 @@ menuBtn.addEventListener('click', () => {
     if(!menuOpen) {
         menuBtn.classList.add('open')
         menuOpen = true
-        alert('is open')
+        
     } else {
         menuBtn.classList.remove('open')
         menuOpen = false
-        alert('is closed')
+        
     }
 })
