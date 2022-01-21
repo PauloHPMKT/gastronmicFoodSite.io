@@ -5,6 +5,10 @@
     @media (max-width:1024px) {
         @include container(10px);
     } 
+
+    @media (max-width: 570px) {
+        padding: 0 30px;
+    }
     
     &-brand {
         display: flex;

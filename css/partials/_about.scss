@@ -1,9 +1,25 @@
 .about{
     @include container(120px);
     display: flex;
+
+    @media (min-width: 1024px) and (max-width: 1270px) {
+        padding: 120px 40px;
+    }
+
+    @media (max-width:  1024px) {
+        display: block;
+        padding: 80px 50px;
+    }
+
     &-cheff-pic {
         width: $display-width;
-        @include bg-image('photo-cheff.png', 100%, center)
+        @include bg-image('photo-cheff.png', 100%, center);
+
+        @media (max-width:  1024px) {
+            width: 100%;
+            @include bg-image('photo-cheff.png', contain, center);
+            height: 70vh;
+        }
     }
 
     &-text-description {
@@ -12,9 +28,17 @@
         flex-direction: column;
         padding: 0 50px;
 
+        @media (max-width:  1024px) {
+            width: 100%;
+        }
+
         h2 {
             font-size: $size-font-subtitle;
             margin-bottom: 30px;
+
+            @media (max-width: 1270px) {
+                font-size: 40px;
+            }
         }
 
         .about-text-paragraph {
@@ -22,6 +46,11 @@
             line-height: 30px;
             margin-bottom: 30px;
             text-align: justify;
+
+            @media (max-width: 1270px) {
+                font-size: 18px;
+                line-height: 25px;
+            }
 
         }
 
@@ -31,6 +60,11 @@
             li {
                 margin: 15px 0;
                 font-size: 20px;
+
+                @media (max-width: 1270px) {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
 
                 &::before {
                     content: " ✓ ";
@@ -42,6 +76,11 @@
             @include style-btn;
             color: $white-color;
             background-color: $main-orange-color;
+
+            @media (max-width: 1270px) {
+                padding: 15px 30px;
+                font-size: 17px;
+            }
         }
     } 
 }

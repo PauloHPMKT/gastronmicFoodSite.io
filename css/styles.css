@@ -28,6 +28,11 @@ body a {
     padding: 10px 80px;
   }
 }
+@media (max-width: 570px) {
+  .header {
+    padding: 0 30px;
+  }
+}
 .header-brand {
   display: flex;
 }
@@ -137,6 +142,11 @@ body a {
   .container {
     background-image: none;
     background-color: #ffa600;
+  }
+}
+@media (max-width: 570px) {
+  .container {
+    padding: 0 30px;
   }
 }
 .container-introduction {
@@ -252,12 +262,33 @@ body a {
   padding: 120px 80px;
   display: flex;
 }
+@media (min-width: 1024px) and (max-width: 1270px) {
+  .about {
+    padding: 120px 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .about {
+    display: block;
+    padding: 80px 50px;
+  }
+}
 .about-cheff-pic {
   width: 50%;
   background-image: url("../image/photo-cheff.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+}
+@media (max-width: 1024px) {
+  .about-cheff-pic {
+    width: 100%;
+    background-image: url("../image/photo-cheff.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+  }
 }
 .about-text-description {
   width: 50%;
@@ -267,9 +298,19 @@ body a {
   flex-direction: column;
   padding: 0 50px;
 }
+@media (max-width: 1024px) {
+  .about-text-description {
+    width: 100%;
+  }
+}
 .about-text-description h2 {
   font-size: 60px;
   margin-bottom: 30px;
+}
+@media (max-width: 1270px) {
+  .about-text-description h2 {
+    font-size: 40px;
+  }
 }
 .about-text-description .about-text-paragraph {
   font-size: 20px;
@@ -277,12 +318,24 @@ body a {
   margin-bottom: 30px;
   text-align: justify;
 }
+@media (max-width: 1270px) {
+  .about-text-description .about-text-paragraph {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
 .about-text-description .info-list-about {
   margin: 20px 0;
 }
 .about-text-description .info-list-about li {
   margin: 15px 0;
   font-size: 20px;
+}
+@media (max-width: 1270px) {
+  .about-text-description .info-list-about li {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 .about-text-description .info-list-about li::before {
   content: " ✓ ";
@@ -297,16 +350,32 @@ body a {
   color: #ffffff;
   background-color: #ffa600;
 }
+@media (max-width: 1270px) {
+  .about-text-description button {
+    padding: 15px 30px;
+    font-size: 17px;
+  }
+}
 
 .content {
   max-width: 1300px;
   margin: 0 auto;
   padding: 120px 80px;
 }
+@media (max-width: 1270px) {
+  .content {
+    padding: 80px 40px;
+  }
+}
 .content h2 {
   font-size: 60px;
   text-align: center;
   margin-bottom: 30px;
+}
+@media (max-width: 1270px) {
+  .content h2 {
+    font-size: 40px;
+  }
 }
 .content-category {
   display: flex;
@@ -315,10 +384,26 @@ body a {
   display: flex;
   width: 100%;
 }
+@media (max-width: 1090px) {
+  .content-category .list {
+    flex-wrap: wrap;
+  }
+}
 .content-category .list li {
   width: 25%;
   margin: 15px;
   text-align: center;
+}
+@media (max-width: 1090px) {
+  .content-category .list li {
+    width: 45%;
+  }
+}
+@media (max-width: 830px) {
+  .content-category .list li {
+    display: block;
+    width: 100%;
+  }
 }
 .content-category .list li img {
   width: 100%;
@@ -326,9 +411,26 @@ body a {
   border-radius: 40px;
   cursor: pointer;
 }
+@media (max-width: 1210px) {
+  .content-category .list li img {
+    height: 310px;
+  }
+}
+@media (max-width: 1090px) {
+  .content-category .list li img {
+    width: 350px;
+    height: 450px;
+  }
+}
 .content-category .list li span {
   margin-top: 20px;
   font-size: 25px;
+}
+@media (max-width: 1090px) {
+  .content-category .list li span {
+    display: block;
+    margin: 0;
+  }
 }
 
 .dishers {

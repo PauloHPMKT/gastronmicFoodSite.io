@@ -13,6 +13,10 @@
         background-image: none;
         background-color: $main-orange-color;
     }
+    //teste de container
+    @media (max-width: 570px) {
+        padding: 0 30px;
+    }
 
     
 
