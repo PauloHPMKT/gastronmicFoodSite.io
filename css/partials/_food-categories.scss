@@ -2,7 +2,7 @@
     @include container(120px);
 
     @media (max-width: 1270px) {
-        padding: 80px 40px;
+        padding: 80px 30px;
     }
     
     h2 {
@@ -23,6 +23,7 @@
 
             @media (max-width: 1090px) {
                 flex-wrap: wrap;
+                justify-content: center;
             }
 
             li {
@@ -31,7 +32,8 @@
                 text-align: center;
 
                 @media (max-width: 1090px) {
-                    width: 45%;
+                    width: 46%;
+                    margin: 10px;
                 }
 
                 @media (max-width: 830px) {

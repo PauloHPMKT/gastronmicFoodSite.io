@@ -6,9 +6,21 @@
     padding-top: 80px;
     font-weight: bold;
 
+    @media (max-width: 570px) {
+        
+        padding: 80px 30px 30px 30px;
+    }
+
     &-container {
         @include align-flex(flex, space-between, unset);
         padding-bottom: 30px;
+
+
+        @media (max-width: 570px) {
+            flex-direction: column;
+            padding: 80px 30px 30px 30px;
+        }
+
         .footer-contact {
             @include align-flex(flex, center, center);
             flex-direction: column;
@@ -29,6 +41,10 @@
         .footer-sections {
             @include align-flex(flex, space-between, center);
             color: $white-color;
+
+            @media (max-width: 570px) {
+                flex-direction: column;
+            }
 
             .footer-contact-sections {
                 padding: 0 30px;

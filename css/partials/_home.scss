@@ -5,18 +5,22 @@
     @include container(1.5rem);
     padding-bottom: 100px;
 
-    @media (max-width: 1270px) {
-        padding-bottom: 40px;
+    @media (max-width:1024px) {
+        @include container(10px);
     }
-
+    
     @media (max-width: 1020px) {
         background-image: none;
         background-color: $main-orange-color;
     }
-    //teste de container
+
     @media (max-width: 570px) {
         padding: 0 30px;
     }
+
+    
+    
+    
 
     
 
@@ -39,11 +43,11 @@
                 font-size: 70px;
             }
 
-            @media (min-width: 1020px) and (max-width: 1270px) {
+            @media (min-width: 1024px) and (max-width: 1270px) {
                 font-size: 60px;
             }
 
-            @media (max-width: 1020px) {
+            @media (max-width: 1024px) {
                 text-align: center;
             }
 
