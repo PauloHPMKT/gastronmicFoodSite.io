@@ -5,24 +5,15 @@
     @include container(1.5rem);
     padding-bottom: 100px;
 
-    @media (max-width:1024px) {
+    @include tablet {
         @include container(10px);
-    }
-    
-    @media (max-width: 1020px) {
         background-image: none;
         background-color: $main-orange-color;
     }
-
-    @media (max-width: 570px) {
-        padding: 0 30px;
+    
+    @include landscape {
+        padding: 10px 30px;
     }
-
-    
-    
-    
-
-    
 
     &-introduction {
         padding-top: 50px;
@@ -30,31 +21,35 @@
         @include align-flex(flex, center, flex-start);
         flex-direction: column;
 
-        @media (max-width: 1020px) {
+        @include tablet {
             width: 100%;
-            @include align-flex(flex, center, center)
+            padding: 20px 0;
+        }
+
+        @include resize-screen(930px) {
+            align-items: center; 
         }
 
         h1 {
             font-size: 80px;
             color: #000000;
 
-            @media (min-width: 1270px) and (max-width: 1295px) {
-                font-size: 70px;
-            }
-
-            @media (min-width: 1024px) and (max-width: 1270px) {
+            @include normal-desktop {
                 font-size: 60px;
             }
 
-            @media (max-width: 1024px) {
+            @include landscape {
+                font-size: 80px;
+            }
+
+            @include resize-screen(930px) {
                 text-align: center;
             }
 
             .color {
                 color: $main-orange-color;
 
-                @media (max-width: 1020px) {
+                @include tablet {
                     color: $white-color;
                 }
             }
@@ -63,7 +58,7 @@
         .info {
             margin: 50px 0px 50px 50px;
 
-            @media (max-width: 1290px) {
+            @include normal-desktop {
                 margin: 30px 0 30px 30px;
             }
 
@@ -79,6 +74,10 @@
 
         .buttons {
             margin: 25px 45px;
+
+            @include mobile {
+                margin: 25px 15px;
+            }
             
             button {
                 @include style-btn;
@@ -88,17 +87,17 @@
                 &:last-child {
                     background-color: $brown-hue;
 
-                    @media (max-width: 1020px) {
+                    @include tablet {
                         color: $white-color;
                     }
                 }
 
-                @media (max-width: 1270px) {
+                @include normal-desktop {
                     padding: 15px 30px;
                     font-size: 17px;
                 }
 
-                @media (max-width: 1020px) {
+                @include tablet {
                     background-color: $white-color;
                     color: $brown-hue;
                 }
@@ -111,7 +110,12 @@
         @include align-flex(flex, center, center);
         @include bg-image('salada-de-frutas.png', 100%, center);
 
-        @media(max-width: 1020px) {
+        @include tablet {
+            width: 80%;
+            background-size: contain;
+        }
+
+        @include resize-screen(930px) {
             display: none;
         }
     }

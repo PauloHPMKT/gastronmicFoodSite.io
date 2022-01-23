@@ -142,17 +142,13 @@ body a {
     max-width: 1300px;
     margin: 0 auto;
     padding: 10px 80px;
-  }
-}
-@media (max-width: 1020px) {
-  .container {
     background-image: none;
     background-color: #ffa600;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 768px) {
   .container {
-    padding: 0 30px;
+    padding: 10px 30px;
   }
 }
 .container-introduction {
@@ -163,11 +159,14 @@ body a {
   align-items: flex-start;
   flex-direction: column;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .container-introduction {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 930px) {
+  .container-introduction {
     align-items: center;
   }
 }
@@ -175,17 +174,17 @@ body a {
   font-size: 80px;
   color: #000000;
 }
-@media (min-width: 1270px) and (max-width: 1295px) {
-  .container-introduction h1 {
-    font-size: 70px;
-  }
-}
-@media (min-width: 1024px) and (max-width: 1270px) {
+@media (max-width: 1280px) {
   .container-introduction h1 {
     font-size: 60px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .container-introduction h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 930px) {
   .container-introduction h1 {
     text-align: center;
   }
@@ -193,7 +192,7 @@ body a {
 .container-introduction h1 .color {
   color: #ffa600;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .container-introduction h1 .color {
     color: #ffffff;
   }
@@ -201,7 +200,7 @@ body a {
 .container-introduction .info {
   margin: 50px 0px 50px 50px;
 }
-@media (max-width: 1290px) {
+@media (max-width: 1280px) {
   .container-introduction .info {
     margin: 30px 0 30px 30px;
   }
@@ -216,6 +215,11 @@ body a {
 .container-introduction .buttons {
   margin: 25px 45px;
 }
+@media (max-width: 480px) {
+  .container-introduction .buttons {
+    margin: 25px 15px;
+  }
+}
 .container-introduction .buttons button {
   padding: 17px 60px;
   border-radius: 15px;
@@ -229,18 +233,18 @@ body a {
 .container-introduction .buttons button:last-child {
   background-color: #632e02;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .container-introduction .buttons button:last-child {
     color: #ffffff;
   }
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .container-introduction .buttons button {
     padding: 15px 30px;
     font-size: 17px;
   }
 }
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .container-introduction .buttons button {
     background-color: #ffffff;
     color: #632e02;
@@ -256,7 +260,13 @@ body a {
   background-size: 100%;
   background-position: center;
 }
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
+  .container-picture-img {
+    width: 80%;
+    background-size: contain;
+  }
+}
+@media (max-width: 930px) {
   .container-picture-img {
     display: none;
   }
