@@ -88,7 +88,7 @@
                 cursor: pointer;
 
 
-                @media (max-width: 1024px) {
+                @include landscape {
                     margin: 20px;
                 }               
             }
