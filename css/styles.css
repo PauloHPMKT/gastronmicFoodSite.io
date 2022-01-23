@@ -28,9 +28,9 @@ body a {
     padding: 10px 80px;
   }
 }
-@media (max-width: 570px) {
+@media (max-width: 768px) {
   .header {
-    padding: 0 30px;
+    padding: 10px 30px;
   }
 }
 .header-brand {
@@ -43,6 +43,11 @@ body a {
   text-shadow: -2px 2px 3px #bdbdbd;
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  .header-brand span {
+    font-size: 40px;
+  }
+}
 .header-brand span div {
   color: #ffa600;
 }
@@ -51,13 +56,18 @@ body a {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1024px) {
+  .header-nav-bar ul {
+    display: none;
+  }
+}
 .header-nav-bar ul li {
   padding: 15px 20px;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
 }
-@media (min-width: 1024px) and (max-width: 1150px) {
+@media (max-width: 1280px) {
   .header-nav-bar ul li {
     font-size: 13px;
     padding: 15px;
@@ -78,17 +88,11 @@ body a {
   color: #632e02;
   transition: 400ms;
 }
-@media (max-width: 1024px) {
-  .header-nav-bar ul {
-    display: none;
-  }
-}
 .header-social-media .social-menu {
   display: flex;
   justify-content: space-between;
   align-items: unset;
   font-size: 30px;
-  margin: 20px 0;
 }
 @media (max-width: 768px) {
   .header-social-media .social-menu {
@@ -114,7 +118,7 @@ body a {
   height: 80px;
   cursor: pointer;
   display: none;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 @media (max-width: 1024px) {
   .header-menu-btn {

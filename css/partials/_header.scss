@@ -2,12 +2,12 @@
     @include container(1.5rem);
     @include align-flex(flex, space-between, center);
 
-    @media (max-width:1024px) {
+    @include tablet {
         @include container(10px);
     } 
 
-    @media (max-width: 570px) {
-        padding: 0 30px;
+    @include landscape {
+        padding: 10px 30px;
     }
     
     &-brand {
@@ -20,9 +20,13 @@
             text-shadow: -2px 2px 3px #bdbdbd;
             cursor: pointer;
 
+            @include mobile {
+                font-size: 40px;
+            }
+
             div {
                 color: $main-orange-color;
-            }   
+            }  
         }
     }
 
@@ -31,13 +35,17 @@
         ul {
             @include align-flex(flex, center, center);
 
+            @include tablet {
+                display: none;
+            }
+
             li {
                 padding: 15px 20px;
                 font-size: 17px;
                 font-weight: 700;
                 text-transform: uppercase;
 
-                @media (min-width: 1024px) and (max-width: 1150px) {
+                @include normal-desktop {
                     font-size: 13px;
                     padding: 15px;
                 }
@@ -61,11 +69,7 @@
                     
                     }
                 }
-            } 
-            
-            @media (max-width: 1024px) {
-                display: none;
-            }
+            }   
         }
     }
 
@@ -74,9 +78,8 @@
         .social-menu {
             @include align-flex(flex, space-between, unset);
             font-size: 30px;
-            margin: 20px 0;
 
-            @media (max-width: 768px) {
+            @include landscape {
                 display: none;
             }
 
@@ -100,9 +103,9 @@
         height: 80px;
         cursor: pointer;
         display: none;
-        margin: 20px 0;
+        margin: 10px 0;
 
-        @media (max-width: 1024px) {
+        @include tablet {
             display: flex;
         }
     }
