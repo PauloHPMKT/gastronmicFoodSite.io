@@ -217,7 +217,7 @@ body a {
 }
 @media (max-width: 480px) {
   .container-introduction .buttons {
-    margin: 25px 15px;
+    margin: 25px 5px;
   }
 }
 .container-introduction .buttons button {
@@ -278,15 +278,20 @@ body a {
   padding: 120px 80px;
   display: flex;
 }
-@media (min-width: 1024px) and (max-width: 1270px) {
+@media (max-width: 1280px) {
   .about {
-    padding: 120px 40px;
+    padding: 80px;
   }
 }
 @media (max-width: 1024px) {
   .about {
     display: block;
     padding: 80px 30px;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    padding: 20px 30px;
   }
 }
 .about-cheff-pic {
@@ -299,11 +304,8 @@ body a {
 @media (max-width: 1024px) {
   .about-cheff-pic {
     width: 100%;
-    background-image: url("../image/photo-cheff.png");
-    background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    height: 70vh;
+    height: 60vh;
   }
 }
 .about-text-description {
@@ -319,11 +321,16 @@ body a {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .about-text-description {
+    padding: 0;
+  }
+}
 .about-text-description h2 {
   font-size: 60px;
   margin-bottom: 30px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .about-text-description h2 {
     font-size: 40px;
   }
@@ -334,7 +341,7 @@ body a {
   margin-bottom: 30px;
   text-align: justify;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .about-text-description .about-text-paragraph {
     font-size: 18px;
     line-height: 25px;
@@ -347,7 +354,7 @@ body a {
   margin: 15px 0;
   font-size: 20px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .about-text-description .info-list-about li {
     font-size: 18px;
     line-height: 25px;
@@ -366,7 +373,7 @@ body a {
   color: #ffffff;
   background-color: #ffa600;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .about-text-description button {
     padding: 15px 30px;
     font-size: 17px;

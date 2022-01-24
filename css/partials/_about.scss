@@ -2,23 +2,28 @@
     @include container(120px);
     display: flex;
 
-    @media (min-width: 1024px) and (max-width: 1270px) {
-        padding: 120px 40px;
+
+    @include normal-desktop {
+        padding: 80px;
     }
 
-    @media (max-width:  1024px) {
+    @include tablet{
         display: block;
-        padding: 80px 30px; //verificar regra padrão
+        padding: 80px 30px;
+    }
+
+    @include mobile {
+        padding: 20px 30px;
     }
 
     &-cheff-pic {
         width: $display-width;
         @include bg-image('photo-cheff.png', 100%, center);
 
-        @media (max-width:  1024px) {
+        @include tablet {
             width: 100%;
-            @include bg-image('photo-cheff.png', contain, center);
-            height: 70vh;
+            background-size: contain;
+            height: 60vh;
         }
     }
 
@@ -28,15 +33,19 @@
         flex-direction: column;
         padding: 0 50px;
 
-        @media (max-width:  1024px) {
+        @include tablet {
             width: 100%;
+        }
+
+        @include landscape {
+            padding: 0;
         }
 
         h2 {
             font-size: $size-font-subtitle;
             margin-bottom: 30px;
 
-            @media (max-width: 1270px) {
+            @include normal-desktop {
                 font-size: 40px;
             }
         }
@@ -47,11 +56,10 @@
             margin-bottom: 30px;
             text-align: justify;
 
-            @media (max-width: 1270px) {
+            @include normal-desktop {
                 font-size: 18px;
                 line-height: 25px;
             }
-
         }
 
         .info-list-about {
@@ -61,7 +69,7 @@
                 margin: 15px 0;
                 font-size: 20px;
 
-                @media (max-width: 1270px) {
+                @include normal-desktop {
                     font-size: 18px;
                     line-height: 25px;
                 }
@@ -77,7 +85,7 @@
             color: $white-color;
             background-color: $main-orange-color;
 
-            @media (max-width: 1270px) {
+            @include normal-desktop {
                 padding: 15px 30px;
                 font-size: 17px;
             }
