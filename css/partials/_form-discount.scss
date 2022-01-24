@@ -15,9 +15,10 @@
         display: inline-block;
         width: 500px;
 
-        @media (max-width: 570px) {
+        @include resize-screen(570px) {
             width: 80%;
-            padding: 30px;
+            padding: 40px 15px;
+            text-align: center;
         }
 
         h3 {
@@ -25,9 +26,9 @@
             margin-bottom: 20px;
             color: $brown-hue;
 
-
-            @media (max-width: 570px) {
+            @include resize-screen(570px) {
                 font-size: 30px;
+                text-align: start;
             }
         }
 
@@ -39,7 +40,7 @@
             position: relative;
             padding-left: 10px;
 
-            @media (max-width: 570px) {
+            @include resize-screen(570px) {
                 width: 70%;
                 padding-bottom: -5px;
             }
@@ -56,13 +57,12 @@
             color: $white-color;
             cursor: pointer;
 
-
-            @media (max-width: 570px) {
+            @include resize-screen(570px) {
                 position: unset;
                 height: 43px;
                 border: none;
                 border-radius: 10px;
-                
+                font-size: 12px;
             }
         }
     }

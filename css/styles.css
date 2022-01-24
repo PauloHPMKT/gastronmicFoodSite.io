@@ -636,7 +636,8 @@ body a {
 @media (max-width: 570px) {
   .form-discount-signUp-input {
     width: 80%;
-    padding: 30px;
+    padding: 40px 15px;
+    text-align: center;
   }
 }
 .form-discount-signUp-input h3 {
@@ -647,6 +648,7 @@ body a {
 @media (max-width: 570px) {
   .form-discount-signUp-input h3 {
     font-size: 30px;
+    text-align: start;
   }
 }
 .form-discount-signUp-input input {
@@ -685,6 +687,7 @@ body a {
     height: 43px;
     border: none;
     border-radius: 10px;
+    font-size: 12px;
   }
 }
 
