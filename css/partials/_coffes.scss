@@ -1,12 +1,20 @@
 .coffees {
     @include container(120px);
 
+    @include landscape {
+        padding: 80px 30px;
+    }
+
+    @include mobile {
+        padding: 80px 30px;
+    }
+
     h2 {
         font-size: $size-font-subtitle;
         text-align: center;
         margin-bottom: 50px;
 
-        @media (max-width: 1270px) {
+        @include normal-desktop {
             font-size: 40px;
         }
     }
@@ -15,21 +23,29 @@
         display: flex;
         padding: 30px 0;
 
-        @media (max-width: 1270px) {
+        @include tablet {
            display: block; 
         }
 
         .picture-coffee {
             width: $display-width;
 
-            @media (max-width: 1270px) {
+            @include normal-desktop {
                 width: 100%; 
                 text-align: center;
             }
 
             img {
-            width: 60%;
-            height: 100%;
+                width: 60%;
+                height: 100%;
+
+                @include normal-desktop {
+                    width: 80%; 
+                }
+
+                @include mobile {
+                    width: 100%;
+                }
             }
         }
 
@@ -37,7 +53,7 @@
             display: flex;
             justify-content: flex-end;
 
-            @media (max-width: 1270px) {
+            @include normal-desktop {
                 justify-content: center;
                 
             }
@@ -50,7 +66,7 @@
             padding: 20px 30px;
             position: relative;
 
-            @media (max-width: 1270px) {
+            @include normal-desktop {
                 width: 100%; 
                 margin-top: 40px;
             }
@@ -67,6 +83,7 @@
                 text-align: justify;
                 margin-bottom: 20px;
             }
+            
             button {
                 @include style-btn;
                 background-color: $main-orange-color;
@@ -78,7 +95,7 @@
     }
 
     &-reverse {
-        @media (max-width: 1270px) {
+        @include tablet {
             display: flex;
             flex-direction: column-reverse;
         }

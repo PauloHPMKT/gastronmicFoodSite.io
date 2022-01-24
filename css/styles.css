@@ -696,12 +696,22 @@ body a {
   margin: 0 auto;
   padding: 120px 80px;
 }
+@media (max-width: 768px) {
+  .coffees {
+    padding: 80px 30px;
+  }
+}
+@media (max-width: 480px) {
+  .coffees {
+    padding: 80px 30px;
+  }
+}
 .coffees h2 {
   font-size: 60px;
   text-align: center;
   margin-bottom: 50px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .coffees h2 {
     font-size: 40px;
   }
@@ -710,7 +720,7 @@ body a {
   display: flex;
   padding: 30px 0;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1024px) {
   .coffees-section {
     display: block;
   }
@@ -718,7 +728,7 @@ body a {
 .coffees-section .picture-coffee {
   width: 50%;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .coffees-section .picture-coffee {
     width: 100%;
     text-align: center;
@@ -728,11 +738,21 @@ body a {
   width: 60%;
   height: 100%;
 }
+@media (max-width: 1280px) {
+  .coffees-section .picture-coffee img {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  .coffees-section .picture-coffee img {
+    width: 100%;
+  }
+}
 .coffees-section .pic-position {
   display: flex;
   justify-content: flex-end;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .coffees-section .pic-position {
     justify-content: center;
   }
@@ -744,7 +764,7 @@ body a {
   padding: 20px 30px;
   position: relative;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1280px) {
   .coffees-section .coffee-description {
     width: 100%;
     margin-top: 40px;
@@ -773,7 +793,7 @@ body a {
   position: absolute;
   right: 20px;
 }
-@media (max-width: 1270px) {
+@media (max-width: 1024px) {
   .coffees-reverse {
     display: flex;
     flex-direction: column-reverse;
