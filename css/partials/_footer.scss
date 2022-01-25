@@ -1,24 +1,21 @@
 .footer {
     @include container(10px);
-    @include bg-image('footer.png', cover, center);
-    clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+    background-color: $main-orange-color;
     border-top-right-radius: 80px;
     padding-top: 80px;
     font-weight: bold;
 
-    @media (max-width: 570px) {
-        
-        padding: 80px 30px 30px 30px;
+    @include landscape {
+        padding: 30px 30px;
     }
 
     &-container {
         @include align-flex(flex, space-between, unset);
         padding-bottom: 30px;
 
-
-        @media (max-width: 570px) {
-            flex-direction: column;
-            padding: 80px 30px 30px 30px;
+        @include resize-screen(690px) {
+            flex-direction: column-reverse;
+            padding: 30px;
         }
 
         .footer-contact {
@@ -42,12 +39,26 @@
             @include align-flex(flex, space-between, center);
             color: $white-color;
 
-            @media (max-width: 570px) {
+            @include resize-screen(600px) {
                 flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 0 auto;
+                padding-left: 20px;
             }
 
             .footer-contact-sections {
                 padding: 0 30px;
+
+                @include resize-screen(870px) {
+                    padding: 0 10px;
+                    
+                }
+
+                @include resize-screen(600px) {
+                    margin: 15px 0;
+                    padding: 0;
+                }
     
                 h4 {
                     color: $brown-hue;
@@ -57,11 +68,19 @@
     
                 .last-menu {
                     font-weight: 500;
+
+                    @include resize-screen(600px) {
+                        text-align: start;
+                    }
     
                     li {
                         margin-bottom: 10px;
                         color: $brown-hue;
                         font-weight: 700;
+
+                        @include resize-screen(600px) {
+                            text-align: start;
+                        }
                     }
                 }
             }

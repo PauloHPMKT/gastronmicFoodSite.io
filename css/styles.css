@@ -804,19 +804,14 @@ body a {
   max-width: 1300px;
   margin: 0 auto;
   padding: 10px 80px;
-  background-image: url("../image/footer.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 30%, 100% 0, 100% 100%, 0% 100%);
+  background-color: #ffa600;
   border-top-right-radius: 80px;
   padding-top: 80px;
   font-weight: bold;
 }
-@media (max-width: 570px) {
+@media (max-width: 768px) {
   .footer {
-    padding: 80px 30px 30px 30px;
+    padding: 30px 30px;
   }
 }
 .footer-container {
@@ -825,10 +820,10 @@ body a {
   align-items: unset;
   padding-bottom: 30px;
 }
-@media (max-width: 570px) {
+@media (max-width: 690px) {
   .footer-container {
-    flex-direction: column;
-    padding: 80px 30px 30px 30px;
+    flex-direction: column-reverse;
+    padding: 30px;
   }
 }
 .footer-container .footer-contact {
@@ -855,13 +850,28 @@ body a {
   align-items: center;
   color: #ffffff;
 }
-@media (max-width: 570px) {
+@media (max-width: 600px) {
   .footer-container .footer-sections {
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-left: 20px;
   }
 }
 .footer-container .footer-sections .footer-contact-sections {
   padding: 0 30px;
+}
+@media (max-width: 870px) {
+  .footer-container .footer-sections .footer-contact-sections {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-container .footer-sections .footer-contact-sections {
+    margin: 15px 0;
+    padding: 0;
+  }
 }
 .footer-container .footer-sections .footer-contact-sections h4 {
   color: #632e02;
@@ -871,10 +881,20 @@ body a {
 .footer-container .footer-sections .footer-contact-sections .last-menu {
   font-weight: 500;
 }
+@media (max-width: 600px) {
+  .footer-container .footer-sections .footer-contact-sections .last-menu {
+    text-align: start;
+  }
+}
 .footer-container .footer-sections .footer-contact-sections .last-menu li {
   margin-bottom: 10px;
   color: #632e02;
   font-weight: 700;
+}
+@media (max-width: 600px) {
+  .footer-container .footer-sections .footer-contact-sections .last-menu li {
+    text-align: start;
+  }
 }
 .footer-bar-end {
   text-align: center;
