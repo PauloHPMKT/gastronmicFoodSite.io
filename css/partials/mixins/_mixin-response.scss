@@ -26,7 +26,6 @@
     }
 }
 
-
 //config layout resize
 @mixin resize-screen($size-width) {
     @media (max-width: $size-width) {
